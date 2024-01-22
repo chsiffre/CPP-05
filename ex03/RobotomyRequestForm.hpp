@@ -1,36 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ShrubberyCreationForm.hpp                          :+:      :+:    :+:   */
+/*   RobotomyRequestForm.hpp                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: charles <charles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/17 11:26:05 by charles           #+#    #+#             */
-/*   Updated: 2024/01/22 19:56:55 by charles          ###   ########.fr       */
+/*   Created: 2024/01/17 11:26:00 by charles           #+#    #+#             */
+/*   Updated: 2024/01/17 11:43:14 by charles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SHRUBBERYCREATIONFORM_HPP
-#define SHRUBBERYCREATIONFORM_HPP
+#ifndef ROBOTOMYREQUESTFORM_HPP
+#define ROBOTOMYREQUESTFORM_HPP
 
 #include "Form.hpp"
-#include <fstream>
 
-class ShrubberyCreationForm : public Form {
-
+class RobotomyRequestForm : public Form
+{
 private:
     const std::string   _target;
-    ShrubberyCreationForm();
+
+    RobotomyRequestForm();
 
 public:
-    ShrubberyCreationForm( const std::string& target );
-    ShrubberyCreationForm( const ShrubberyCreationForm& src );
-    ~ShrubberyCreationForm();
+    RobotomyRequestForm( const std::string& target );
+    RobotomyRequestForm( const RobotomyRequestForm& src );
+    ~RobotomyRequestForm();
 
-    ShrubberyCreationForm&  operator=( ShrubberyCreationForm& rhs );
+    RobotomyRequestForm &operator=( RobotomyRequestForm& rhs );
 
     void        execute( const Bureaucrat& executor ) const;
-
 };
 
 #endif
