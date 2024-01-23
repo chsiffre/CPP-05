@@ -6,7 +6,7 @@
 #    By: charles <charles@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/17 10:19:57 by charles           #+#    #+#              #
-#    Updated: 2024/01/17 11:45:27 by charles          ###   ########.fr        #
+#    Updated: 2024/01/23 12:10:00 by charles          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,11 +18,11 @@ RM			= rm -rf
 
 OBJDIR = .objFiles
 
-FILES		= main Bureaucrat Form ShrubberyCreationForm RobotomyRequestForm PresidentialPardonForm
+FILES		= main Bureaucrat Form ShrubberyCreationForm RobotomyRequestForm PresidentialPardonForm Intern
 
 SRC			= $(FILES:=.cpp)
 OBJ			= $(addprefix $(OBJDIR)/, $(FILES:=.o))
-HEADER		= Bureaucrat.hpp Form.hpp
+HEADER		= Bureaucrat.hpp Form.hpp ShrubberyCreationForm.hpp RobotomyRequestForm.hpp PresidentialPardonForm.hpp Intern.hpp
 
 
 all: $(NAME)

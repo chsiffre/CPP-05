@@ -6,14 +6,14 @@
 /*   By: charles <charles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 11:25:53 by charles           #+#    #+#             */
-/*   Updated: 2024/01/17 11:42:46 by charles          ###   ########.fr       */
+/*   Updated: 2024/01/23 12:12:39 by charles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PRESIDENTIALPARDONFORM_HPP
-#define PRESIDENTIALPARDONFORM_HPP
+# define PRESIDENTIALPARDONFORM_HPP
 
-#include "Form.hpp"
+# include "Form.hpp"
 
 class PresidentialPardonForm : public Form
 {

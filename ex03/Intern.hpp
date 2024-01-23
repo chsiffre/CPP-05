@@ -1,35 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   RobotomyRequestForm.hpp                            :+:      :+:    :+:   */
+/*   Intern.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: charles <charles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/17 11:26:00 by charles           #+#    #+#             */
-/*   Updated: 2024/01/23 12:12:46 by charles          ###   ########.fr       */
+/*   Created: 2024/01/23 12:08:22 by charles           #+#    #+#             */
+/*   Updated: 2024/01/23 12:13:31 by charles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ROBOTOMYREQUESTFORM_HPP
-# define ROBOTOMYREQUESTFORM_HPP
+#ifndef INTERN_HPP
+# define INTERN_HPP
 
 # include "Form.hpp"
 
-class RobotomyRequestForm : public Form
-{
-private:
-    const std::string   _target;
-
-    RobotomyRequestForm();
+class Intern {
 
 public:
-    RobotomyRequestForm( const std::string& target );
-    RobotomyRequestForm( const RobotomyRequestForm& src );
-    ~RobotomyRequestForm();
+    Intern();
+    Intern(const Intern& src);
+    ~Intern();
 
-    RobotomyRequestForm &operator=( RobotomyRequestForm& rhs );
+    Intern& operator=(const Intern& rhs);
 
-    void        execute( const Bureaucrat& executor ) const;
+    Form*   makeForm(std::string name, std::string target);
 };
 
 #endif

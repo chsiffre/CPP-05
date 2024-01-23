@@ -6,10 +6,11 @@
 /*   By: charles <charles@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 10:17:49 by charles           #+#    #+#             */
-/*   Updated: 2024/01/17 11:47:54 by charles          ###   ########.fr       */
+/*   Updated: 2024/01/23 12:59:59 by charles          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Intern.hpp"
 #include "Form.hpp"
 #include "Bureaucrat.hpp"
 #include "ShrubberyCreationForm.hpp"
@@ -18,6 +19,12 @@
 
 int main( void )
 {
+   
+    Intern  someRandomIntern;
+    Form*   rrf;
+
+    rrf = someRandomIntern.makeForm("robotomy request", "Bender");
+    delete rrf;
 
     try {
         Bureaucrat bureaucrat("ash", 2); // error with 200
